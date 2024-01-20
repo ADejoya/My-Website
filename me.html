@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> MY PROFILE</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+   
+    
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h1>ANTON DE JOYA</h1>
+            
+            <p>BSIT NU-FAIRVIEW</p>
+
+
+        </div>
+        <div class="col">
+           <div class="card card1" onclick="navigateTo('aboutme.html')">
+            <h5>About me</h5>
+            <p> </p>
+           </div>
+           <div class="card card2" onclick="navigateTo('resume.html')">
+            <h5>Resume</h5>
+            <p> </p>
+           </div>
+           <div class="card card3" onclick="navigateTo('education.html')">
+            <h5>Education</h5>
+            <p> </p>
+           </div>
+           <div class="card card4" onclick="navigateTo('contacts.html')">
+            <h5>Contact information</h5>
+            <p> </p>
+           </div>
+         </div>
+     </div>
+ </div>
+
+ <script>
+    function navigateTo(page) {
+        window.location.href = page;
+    }
+</script>
+
+
+</body>
+</html>
