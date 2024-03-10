@@ -1,0 +1,127 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    
+}
+
+
+.col {
+    flex-basis: 100%; /* Adjust the width to occupy full width */
+    justify-content: center; /* Center items horizontally */
+    display: flex; /* Make the column a flex container */
+    flex-direction: column; /* Align items in a column */
+    align-items: center; /* Center items horizontally */
+    text-align: center; /* Center text inside */
+    
+}
+
+.name {
+    margin-bottom: 10px; /* Adjust margin as needed */
+}
+
+/* Container styles */
+.container {
+    padding-left: 8%;
+    padding-right: 8%;
+    color: whitesmoke;
+}
+
+/* Navbar styles */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: rgb(23, 16, 16);
+    position: fixed;
+    width: 100%;
+    z-index: 999; /* Ensure it stays on top */
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 24px 14px;
+    text-decoration: none;
+    font-size: larger;
+}
+
+li a:hover {
+    background-color: #333;
+}
+
+/* Contacts container */
+.container2 {
+    padding-top: 70px; /* Adjust for the fixed navbar */
+    color: whitesmoke;
+    background-image: linear-gradient(rgb(45, 149, 150), rgb(38, 80, 115));
+}
+
+/* Card styles */
+.card {
+    width: 200px;
+    height: 230px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    background-position: center;
+    background-size: cover;
+    transition: 0.3s ease;
+    font-size: x-large;
+    cursor: pointer;
+    background-image: url(ADLogo.png);
+    background-color: whitesmoke;
+    
+    
+}
+
+
+.card:hover {
+    transform: scale(1.1); 
+}
+
+.col a {
+    color: #000000; 
+    text-decoration: none; 
+}
+
+.col a:hover {
+    color: #051825; /* Change this color to the desired color for the links on hover */
+}
+
+
+
+/* Media query for adjusting card size on even smaller screens */
+@media (max-width: 480px) {
+    .card {
+        width: 100%;
+        margin: 10px 0;
+    }
+}
+
+.contact-text {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px; /* Adjust margin as needed */
+}
+
+.contact-text h1 {
+    margin: 1%;
+}
+
+/* Adjust styles for responsiveness */
+@media (max-width: 768px) {
+    .contact-text {
+        justify-content: center;
+    }
+}

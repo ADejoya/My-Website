@@ -1,0 +1,140 @@
+/* CSS code */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100vw;
+  height: 100vh;
+  background-image: url(me.png);
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.header-content {
+  margin-bottom: 10vh; /* Changed margin for responsiveness */
+  color: black;
+  text-align: center;
+}
+
+.header-content h2 {
+  font-size: 4vmin;
+  color: rgb(44, 51, 51);
+}
+
+.line {
+  width: 150px;
+  height: 4px;
+  background: rgb(38, 102, 207);
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.header-content h1 {
+  font-size: 7vmin;
+  margin-top: 5vh; /* Changed margin for responsiveness */
+  margin-bottom: 3vh; /* Changed margin for responsiveness */
+  color: black;
+}
+
+/* Home button */
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  overflow: hidden;
+  background-color: rgb(23, 16, 16);
+  position: fixed;
+  width: 100%;
+  font-family: 'Roboto', sans-serif;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: right;
+  padding: 2vh 2vw; /* Adjusted padding for responsiveness */
+  font-size: 2.5vmin; /* Adjusted font size for responsiveness */
+}
+
+/* Section */
+section {
+  width: 80%;
+  margin: 10vh auto; /* Changed margin for responsiveness */
+}
+
+.title {
+  text-align: center;
+  font-size: 4vmin;
+  color: black;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  background: rgb(57, 91, 100);
+  flex-wrap: wrap; /* Allow columns to wrap on smaller screens */
+}
+
+.row .col {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 2vh; /* Adjusted margin for responsiveness */
+  color: rgb(245, 242, 231);
+}
+
+.row .col img {
+  max-width: 100%; /* Make images responsive */
+  height: auto;
+  margin-bottom: 1vh; /* Add margin between images */
+}
+
+h4 {
+  font-size: 3vmin;
+  color: rgb(245, 242, 231);
+  margin: 2vh auto; /* Adjusted margin for responsiveness */
+}
+
+body,
+html {
+  background-color: rgb(245, 242, 231);
+  overflow-x: hidden;
+}
+
+p {
+  font-size: 2.5vmin; /* Adjusted font size for responsiveness */
+}
+
+/* Media queries for responsiveness */
+
+@media screen and (min-width: 768px) {
+  .header-content {
+      margin-bottom: 5vh; /* Adjusted margin for responsiveness */
+  }
+
+  .header-content h1 {
+      font-size: 5vmin; /* Adjusted font size for responsiveness */
+      margin-top: 3vh; /* Adjusted margin for responsiveness */
+      margin-bottom: 2vh; /* Adjusted margin for responsiveness */
+
+
+  }
+}
